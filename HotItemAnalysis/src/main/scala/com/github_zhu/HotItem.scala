@@ -137,7 +137,6 @@ class TopNItems(topActor: Int) extends KeyedProcessFunction[Tuple, f.ItemViewCou
         .append("\n")
     }
     Thread.sleep(1000)
-
     out.collect(result.toString())
 
   }
